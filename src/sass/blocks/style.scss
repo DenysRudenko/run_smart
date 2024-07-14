@@ -4,6 +4,11 @@
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
-h1 {
-    color: red;
+.container{
+    max-width: 950px;
+    margin: 0 auto;
 }
+
+@import 'promo';
+@import 'header';
+@import 'buttons';
