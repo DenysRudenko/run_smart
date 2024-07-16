@@ -34,4 +34,18 @@
             text-decoration: underline;
         }
     }
+
+    @media(max-width: 991px) {
+    padding: 70px 30px 80px 30px;
+    }
+
+    @media(max-width: 768px) {
+    &__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__item {
+        max-width: 100%;
+    }
+}
 }
