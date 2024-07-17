@@ -1,7 +1,32 @@
 .title {
-    color: #0d0d0d;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
+	color: #0d0d0d;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+
+	&__left {
+		text-align: left;
+		color: #fff;
+		font-size: 36px;
+	}
+
+	@media (max-width: $max-width-md) {
+		&__left {
+			text-align: center;
+			font-size: 32px;
+		}
+	}
+
+	@media (max-width: $max-width-sm) {
+		&__left {
+			font-size: 26px;
+		}
+	}
+
+	@media(max-width: $max-width-xs) {
+		&__left {
+			font-size: 20px;
+		}
+	}
 }

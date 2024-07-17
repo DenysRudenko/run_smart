@@ -1,0 +1,26 @@
+.consultation {
+	min-height: 680px;
+	padding: 100px 0 92px 0;
+	background: url(../images/bg/bg_2.png) center (center/cover) no-repeat;
+
+	&__descr {
+		color: #fff;
+		font-size: 28px;
+		font-weight: 300;
+	}
+
+	@media(max-width: $max-width-md) {
+		&__descr {
+			font-size: 20px;
+			text-align: center;
+		}
+	}
+
+	@media(max-width: $max-width-xs) {
+		padding: 100px 15px 92px 15px;
+
+		&__descr {
+			display: none;
+		}
+	}
+}

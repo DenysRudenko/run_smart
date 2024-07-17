@@ -1,12 +1,12 @@
 @import '../base/variables';
 
 * {
-    font-family: 'Museo Sans Cyrl', sans-serif;
+	font-family: 'Museo Sans Cyrl', sans-serif;
 }
 
-.container{
-    max-width: 950px;
-    margin: 0 auto;
+.container {
+	max-width: 950px;
+	margin: 0 auto;
 }
 
 @import 'promo';
@@ -14,3 +14,5 @@
 @import 'buttons';
 @import 'advantages';
 @import 'titles';
+@import 'consultation';
+@import 'forms'
