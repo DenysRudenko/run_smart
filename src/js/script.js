@@ -5,14 +5,15 @@ $(document).ready(function () {
 		nextArrow: '<button type="button" class="slick-next"><img src="icons/slider/right.png"></button>',
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 991,
 				settings: {
-					dots: true,
+					dots: false,
 					arrows: false
 				}
 			}
 		]
 	});
+
 
 	// JQuery catalog active switcher
 	$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
