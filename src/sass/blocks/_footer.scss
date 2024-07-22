@@ -56,4 +56,10 @@
 		justify-content: center;
 		align-items: center;
 	}
+
+	@media(max-width: $max-width-xs) {
+		&__info {
+			display: none;
+		}
+	}
 }
