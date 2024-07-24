@@ -82,4 +82,7 @@ $(document).ready(function () {
 	validateForms('#consultation-form');
 	validateForms('#order form');
 	validateForms('#consultation form');
+
+	// Validation for irish citizen
+	$('input[name=phone]').mask("+35 3(99) 999-99-99");
 });
