@@ -35,4 +35,4 @@ node_modules
 test.xunit
 
 # Exclude smart.php
-smart.php
+src/mailer/smart.php
