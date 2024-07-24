@@ -85,4 +85,25 @@ $(document).ready(function () {
 
 	// Validation for irish citizen
 	$('input[name=phone]').mask("+35 3(99) 999-99-99");
+
+	// function to send email from website
+	$('form').submit(function () {
+		e.preventDefault();
+
+		// validator function, preventing to send empty forms
+		if (!$(this).valid()) {
+			return;
+		}
+
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function () {
+			$(this).find("input").val("");
+
+			$('form').trigger('reset');
+		});
+		return false;
+	});
 });
