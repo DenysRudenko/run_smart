@@ -50,4 +50,36 @@ $(document).ready(function () {
 			$('.overlay, #order').fadeIn('slow');
 		});
 	});
+
+	// Validating configuration
+	function validateForms(form) {
+		$(form).validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 10
+				},
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: {
+					required: "We need your name to contact you",
+					minlength: jQuery.validator.format("At least {0} characters required!")
+				},
+				phone: "Please input you phone number",
+				email: {
+					required: "Please input your email",
+					email: "Incorrect type of email"
+				}
+			}
+		});
+	}
+
+	validateForms('#consultation-form');
+	validateForms('#order form');
+	validateForms('#consultation form');
 });

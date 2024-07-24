@@ -42,6 +42,17 @@
 		min-height: 140px;
 	}
 
+	.error {
+		color: $main-color;
+		border: 1px solid red;
+	}
+
+	label.error {
+		border: none;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
 	@media(max-width: $max-width-xs) {
 		&__close {
 			top: 10px;
