@@ -35,6 +35,16 @@
 		}
 	}
 
+	&__icon {
+		&_animated {
+			animation: heartbeat 1.5s ease infinite;
+
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
+	}
+
 	@media(max-width: $max-width-md) {
 		padding: 70px 30px 80px 30px;
 	}
